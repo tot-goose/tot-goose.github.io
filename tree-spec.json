@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "name": "Винная ёлка каркасная",
+    "units": "cm",
+    "note": "Единый источник правды. Используется интерпретатором 3D (HTML), генератором чертежа (Python) и скриптом для Blender. Рейки внутри колец — кольца нанизаны на рейки."
+  },
+  "tree": {
+    "height_cm": 200,
+    "footprint_d_cm": 150,
+    "rails": 8,
+    "rail_section_cm": [
+      2.0,
+      4.0
+    ],
+    "rail_spec_section_cm": [
+      2.0,
+      4.0
+    ],
+    "ring_tube_d_cm": 3.2,
+    "ring_material": "ПНД Ø32 мм",
+    "peg": {
+      "d_cm": 1.1,
+      "spec_d_cm": 1.0,
+      "len_cm": 30.0,
+      "tilt_deg": 50
+    },
+    "bottle": {
+      "h_cm": 30.0,
+      "body_d_cm": 8.0,
+      "neck_d_cm": 1.8,
+      "mass_kg": 1.4
+    },
+    "rails_inside_rings": true
+  },
+  "mount": {
+    "default": "neck-down-tilted",
+    "options": {
+      "neck-down-tilted": "Классическая сборка: горлышко вниз в отверстие кольца (на штырь), дно смотрит вверх-наружу, тело уходит наружу под углом штыря (50°). Зазоры положительные.",
+      "base-on-ring": "Дно бутылки опирается на кольцо, горлышко смотрит вверх-наружу по наклону штыря.",
+      "neck-down-vertical": "Бутылка насажена горлышком вниз на вертикальный штырь, дно вверху. Требует проверки на пересечения."
+    }
+  },
+  "tiers": [
+    {
+      "tier": 11,
+      "h_cm": 190,
+      "ring_d_cm": 10,
+      "axes": 3
+    },
+    {
+      "tier": 10,
+      "h_cm": 172,
+      "ring_d_cm": 19,
+      "axes": 6
+    },
+    {
+      "tier": 9,
+      "h_cm": 154,
+      "ring_d_cm": 27,
+      "axes": 9
+    },
+    {
+      "tier": 8,
+      "h_cm": 136,
+      "ring_d_cm": 36,
+      "axes": 12
+    },
+    {
+      "tier": 7,
+      "h_cm": 118,
+      "ring_d_cm": 44,
+      "axes": 15
+    },
+    {
+      "tier": 6,
+      "h_cm": 100,
+      "ring_d_cm": 53,
+      "axes": 18
+    },
+    {
+      "tier": 5,
+      "h_cm": 82,
+      "ring_d_cm": 62,
+      "axes": 21
+    },
+    {
+      "tier": 4,
+      "h_cm": 64,
+      "ring_d_cm": 70,
+      "axes": 24
+    },
+    {
+      "tier": 3,
+      "h_cm": 46,
+      "ring_d_cm": 79,
+      "axes": 27
+    },
+    {
+      "tier": 2,
+      "h_cm": 28,
+      "ring_d_cm": 87,
+      "axes": 30
+    },
+    {
+      "tier": 1,
+      "h_cm": 10,
+      "ring_d_cm": 96,
+      "axes": 33
+    }
+  ],
+  "phase": {
+    "mode": "half-step",
+    "note": "Каждый ярус смещён на полшага относительно нижнего — оси в соседних ярусах чередуются и не накладываются."
+  },
+  "lights": {
+    "led": true,
+    "led_temp_k": 2700,
+    "led_count_per_ring": 24,
+    "star": true
+  },
+  "colors": {
+    "glass": [
+      "#2f6b3a",
+      "#6b3a22",
+      "#cfd8d6",
+      "#3c5a7a"
+    ],
+    "wood": "#c79a63",
+    "steel": "#20242b",
+    "floor": "#e9e6e0"
+  }
+}
